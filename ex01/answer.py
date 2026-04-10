@@ -15,19 +15,14 @@ def main() -> None:
     moving_average_7d = integer_series.rolling(window=7).mean()
 
     print(f"integer_series length: {len(integer_series)}")
+    print()
+    print("integer_series:")
+    print(integer_series)
+    print()
     print(f"7-day moving average length: {len(moving_average_7d)}")
     print()
-    print("integer_series head:")
-    print(integer_series.head(10).to_string())
-    print()
-    print("integer_series tail:")
-    print(integer_series.tail(10).to_string())
-    print()
-    print("7-day moving average head:")
-    print(moving_average_7d.head(10).to_string())
-    print()
-    print("7-day moving average tail:")
-    print(moving_average_7d.tail(10).to_string())
+    print("7-day moving average:")
+    print(moving_average_7d)
 
 
 if __name__ == "__main__":
